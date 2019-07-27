@@ -36,9 +36,9 @@ spec:
     json:
       nativeType: 'integer'
     mariadb:
-      nativeType: 'INTEGER'
+      nativeType: 'BIGINT'
     mysql:
-      nativeType: 'INTEGER'
+      nativeType: 'BIGINT'
     openldap:
       nativeType: '1.3.6.1.4.1.1466.115.121.1.27'
       ldapMatchingRule: 'integerMatch'
@@ -46,8 +46,8 @@ spec:
     plsql:
       nativeType: 'NUMBER'
     postgresql:
-      nativeType: 'integer'
+      nativeType: 'bigint'
     sqlite:
       nativeType: 'INTEGER'
     tsql:
-      nativeType: 'integer'
+      nativeType: 'bigint'

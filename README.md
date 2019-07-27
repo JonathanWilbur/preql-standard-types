@@ -13,12 +13,12 @@ This is currently in development.
   - [x] `boolean`
   - [x] `sint8`
   - [x] `sint16`
-  - [ ] `sint32`
-  - [ ] `sint64`
-  - [ ] `uint8`
-  - [ ] `uint16`
-  - [ ] `uint32`
-  - [ ] `uint64`
+  - [x] `sint32`
+  - [x] `sint64`
+  - [x] `uint8`
+  - [x] `uint16`
+  - [x] `uint32`
+  - [x] `uint64`
   - [ ] `sreal8`
   - [ ] `sreal16`
   - [ ] `sreal32`
