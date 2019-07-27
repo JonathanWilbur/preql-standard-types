@@ -10,8 +10,8 @@ This is currently in development.
 
 - [ ] Types
   - [ ] `id`?
-  - [ ] `boolean`
-  - [ ] `sint8`
+  - [x] `boolean`
+  - [x] `sint8`
   - [ ] `sint16`
   - [ ] `sint32`
   - [ ] `sint64`
@@ -162,3 +162,4 @@ This is currently in development.
   - [ ] `leftRight`
   - [ ] `upDown`
   - [ ] `direction4`
+- [ ] Add LDAP matching rules
