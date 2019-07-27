@@ -23,7 +23,7 @@ metadata:
     # preql.tech/definingSpecificationURI: ''
     preql.tech/exampleValue: '224'
 spec:
-  jsonEquivalent: 'string'
+  jsonEquivalent: 'integer'
   minimum: -128
   maximum: 127
   targets:
