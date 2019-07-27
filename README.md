@@ -1,0 +1,164 @@
+# PreQL Standard Types Library
+
+* Author: Jonathan M. Wilbur <[jonathan@wilbur.space](mailto:jonathan@wilbur.space)>
+* Copyright Year: 2019
+* License: [MIT License](https://mit-license.org/)
+
+This is currently in development.
+
+## To Do
+
+- [ ] Types
+  - [ ] `id`?
+  - [ ] `boolean`
+  - [ ] `sint8`
+  - [ ] `sint16`
+  - [ ] `sint32`
+  - [ ] `sint64`
+  - [ ] `uint8`
+  - [ ] `uint16`
+  - [ ] `uint32`
+  - [ ] `uint64`
+  - [ ] `sreal8`
+  - [ ] `sreal16`
+  - [ ] `sreal32`
+  - [ ] `sreal64`
+  - [ ] `ureal8`
+  - [ ] `ureal16`
+  - [ ] `ureal32`
+  - [ ] `ureal64`
+  - [ ] `varchar8`
+  - [ ] `varchar16`
+  - [ ] `varchar32`
+  - [ ] `varchar64`
+  - [ ] `text8`
+  - [ ] `text16`
+  - [ ] `text32`
+  - [ ] `text64`
+  - [ ] `blob8`
+  - [ ] `blob16`
+  - [ ] `blob32`
+  - [ ] `blob64`
+  - [ ] `binchar8`
+  - [ ] `binchar16`
+  - [ ] `binchar32`
+  - [ ] `binchar64`
+  - [ ] `decchar8`
+  - [ ] `decchar16`
+  - [ ] `decchar32`
+  - [ ] `decchar64`
+  - [ ] `hexchar8`
+  - [ ] `hexchar16`
+  - [ ] `hexchar32`
+  - [ ] `hexchar64`
+  - [ ] `hexchar128`
+  - [ ] Base encodings
+    - Base-2
+    - Base-10
+    - Base-16
+    - Base-32
+    - Base-53
+    - Base-64
+  - [ ] `personName`
+  - [ ] `phone`
+  - [ ] `email`
+  - [ ] `fqdn`
+  - [ ] `dnsLabel`
+  - [ ] `uuid`
+  - [ ] `oid`
+  - [ ] `mongoId`
+  - [ ] `usZip5`
+  - [ ] `usZip9`
+  - [ ] `handle` (Twitter, Gab, Discord)
+  - [ ] `sex`
+  - [ ] `timeZone`
+  - [ ] `ean` / `upc`
+  - [ ] `gtin`
+  - [ ] `ssn`
+  - [ ] `mac`
+  - [ ] `eui`
+  - [ ] `oui`
+  - [ ] `ipv4`
+  - [ ] `ipv6`
+  - [ ] `ip`
+  - [ ] `money`
+  - [ ] `iso3166-1`
+  - [ ] `iso3166-2`
+  - [ ] `iso3166-3`
+  - [ ] `iso639`?
+  - [ ] `iso8601`?
+  - [ ] `iso6093nr1`
+  - [ ] `iso6093nr2`
+  - [ ] `iso6093nr3`
+  - [ ] `date`
+  - [ ] `time`
+  - [ ] `datetime`
+  - [ ] `timestamp`?
+  - [ ] `year`
+  - [ ] `month`
+  - [ ] `day`
+  - [ ] `hour`
+  - [ ] `minute`
+  - [ ] `second`
+  - [ ] `millisecond`
+  - [ ] Spatial types?
+  - [ ] `locale`
+  - [ ] `mimeType`
+  - [ ] `emailTimestamp`
+  - [ ] `url`
+  - [ ] `uri`
+  - [ ] `uriSchema`
+  - [ ] `urn`
+  - [ ] `iri`
+  - [ ] `unc`
+  - [ ] `duid`
+  - [ ] `geoCode`
+  - [ ] `interfaceName`
+  - [ ] `unixFileName`
+  - [ ] `unixPath`
+  - [ ] `windowsFileName`
+  - [ ] `windowsPath`
+  - [ ] `sid`
+  - [ ] `dn`
+  - [ ] `rdn`
+  - [ ] `dnsRecordType`
+  - [ ] `nucleotide`
+  - [ ] `compass4` (N, E, S, W)
+  - [ ] `compass8` (N, NE, E, etc.)
+  - [ ] `compass16` (N, NNE, ENE, etc.)
+  - [ ] `latitude`
+  - [ ] `longitude`
+  - [ ] `degrees`
+  - [ ] `fahrenheit`
+  - [ ] `celcius` (Minimum -273.15)
+  - [ ] `kelvins`
+  - [ ] `element`
+  - [ ] `iupacName`
+  - [ ] `chemicalFormula`
+  - [ ] `doi`
+  - [ ] `isbn`
+  - [ ] `ticker`
+  - [ ] `tlsCipher`
+  - [ ] Hashes
+    - [ ] `md5`
+    - [ ] `sha128`
+    - [ ] `sha256`
+    - [ ] `sha384`
+    - [ ] `sha512`
+  - [ ] `eyeColor`
+  - [ ] `race`
+  - [ ] `mla`
+  - [ ] `apa`
+  - [ ] `html`
+  - [ ] `xml`
+  - [ ] `json`
+  - [ ] `yaml`
+  - [ ] `toml`
+  - [ ] `httpCode`
+  - [ ] `ftpCode`
+  - [ ] `smtpCode`
+  - [ ] `pixelColor`
+  - [ ] `printerColor`
+  - [ ] `leftRight`
+  - [ ] `upDown`
+  - [ ] `direction4`
