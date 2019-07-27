@@ -12,7 +12,7 @@ This is currently in development.
   - [ ] `id`?
   - [x] `boolean`
   - [x] `sint8`
-  - [ ] `sint16`
+  - [x] `sint16`
   - [ ] `sint32`
   - [ ] `sint64`
   - [ ] `uint8`
