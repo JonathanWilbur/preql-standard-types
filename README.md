@@ -19,18 +19,18 @@ This is currently in development.
   - [x] `uint16`
   - [x] `uint32`
   - [x] `uint64`
-  - [ ] `sreal8`
-  - [ ] `sreal16`
-  - [ ] `sreal32`
-  - [ ] `sreal64`
-  - [ ] `ureal8`
-  - [ ] `ureal16`
-  - [ ] `ureal32`
-  - [ ] `ureal64`
-  - [ ] `varchar8`
-  - [ ] `varchar16`
-  - [ ] `varchar32`
-  - [ ] `varchar64`
+  - [x] ~~sreal8~~
+  - [x] `sreal16`
+  - [x] `sreal32`
+  - [x] `sreal64`
+  - [x] ~~ureal8~~
+  - [x] `ureal16`
+  - [x] `ureal32`
+  - [x] `ureal64`
+  - [x] `varchar8`
+  - [x] `varchar16`
+  - [x] `varchar32`
+  - [x] `varchar64`
   - [ ] `text8`
   - [ ] `text16`
   - [ ] `text32`
