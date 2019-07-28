@@ -163,3 +163,5 @@ This is currently in development.
   - [ ] `upDown`
   - [ ] `direction4`
 - [ ] Add LDAP matching rules
+- [ ] Add `minimum` and `maximum` to floating point types.
+  - [ ] How will the targe libraries ignore storage extrema?
