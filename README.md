@@ -31,14 +31,14 @@ This is currently in development.
   - [x] `varchar16`
   - [x] `varchar32`
   - [x] `varchar64`
-  - [ ] `text8`
-  - [ ] `text16`
-  - [ ] `text32`
-  - [ ] `text64`
-  - [ ] `blob8`
-  - [ ] `blob16`
-  - [ ] `blob32`
-  - [ ] `blob64`
+  - [x] `text8`
+  - [x] `text16`
+  - [x] `text32`
+  - [x] `text64`
+  - [x] `blob8`
+  - [x] `blob16`
+  - [x] `blob32`
+  - [x] `blob64`
   - [ ] `binchar8`
   - [ ] `binchar16`
   - [ ] `binchar32`
@@ -47,6 +47,10 @@ This is currently in development.
   - [ ] `decchar16`
   - [ ] `decchar32`
   - [ ] `decchar64`
+  - [ ] `octchar8`
+  - [ ] `octchar16`
+  - [ ] `octchar32`
+  - [ ] `octchar64`
   - [ ] `hexchar8`
   - [ ] `hexchar16`
   - [ ] `hexchar32`
@@ -54,6 +58,7 @@ This is currently in development.
   - [ ] `hexchar128`
   - [ ] Base encodings
     - Base-2
+    - Base-8
     - Base-10
     - Base-16
     - Base-32
@@ -86,25 +91,20 @@ This is currently in development.
   - [ ] `iso3166-2`
   - [ ] `iso3166-3`
   - [ ] `iso639`?
-  - [ ] `iso8601`?
-  - [ ] `iso6093nr1`
-  - [ ] `iso6093nr2`
-  - [ ] `iso6093nr3`
-  - [ ] `date`
-  - [ ] `time`
-  - [ ] `datetime`
+  - [x] `date`
+  - [x] `time`
+  - [x] `datetime`
   - [ ] `timestamp`?
-  - [ ] `year`
-  - [ ] `month`
-  - [ ] `day`
-  - [ ] `hour`
-  - [ ] `minute`
-  - [ ] `second`
-  - [ ] `millisecond`
+  - [x] `year`
+  - [x] `month`
+  - [x] `day`
+  - [x] `hour`
+  - [x] `minute`
+  - [x] `second`
+  - [x] `millisecond`
   - [ ] Spatial types?
   - [ ] `locale`
   - [ ] `mimeType`
-  - [ ] `emailTimestamp`
   - [ ] `url`
   - [ ] `uri`
   - [ ] `uriSchema`
