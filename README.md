@@ -165,3 +165,4 @@ This is currently in development.
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
+- [ ] Add length indicators to the end of LDAP syntaxes
