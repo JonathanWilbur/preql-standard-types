@@ -62,4 +62,4 @@ spec:
     sqlite:
       nativeType: 'TEXT'
     tsql:
-      nativeType: 'NCHAR(64)'
+      nativeType: 'NCHAR(36)'
