@@ -71,7 +71,7 @@ This is currently in development.
   - [ ] `dnsLabel`
   - [x] `uuid`
   - [x] `oid`
-  - [ ] `mongoId`
+  - [x] `bsonId`
   - [ ] `usZip5`
   - [ ] `usZip9`
   - [ ] `handle` (Twitter, Gab, Discord)
@@ -105,11 +105,24 @@ This is currently in development.
   - [ ] Spatial types?
   - [ ] `locale`
   - [ ] `mimeType`
-  - [ ] `url`
-  - [ ] `uri`
-  - [ ] `uriSchema`
-  - [ ] `urn`
-  - [ ] `iri`
+  - [x] `uri`
+  - [x] `urn`
+  - [x] `url`
+  - [ ] `urlSchema`
+  - [ ] `urlUsername`
+  - [ ] `urlPassword`
+  - [ ] `urlPath`
+  - [ ] `urlQuery`
+  - [ ] `urlFragment`
+  - [x] `iri`
+  - [ ] `irn`
+  - [x] `irl`
+  - [ ] `irlSchema`
+  - [ ] `irlUsername`
+  - [ ] `irlPassword`
+  - [ ] `irlPath`
+  - [ ] `irlQuery`
+  - [ ] `irlFragment`
   - [ ] `unc`
   - [ ] `geoCode`
   - [ ] `unixInterfaceName`
