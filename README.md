@@ -69,7 +69,7 @@ This is currently in development.
   - [ ] `email`
   - [ ] `fqdn`
   - [ ] `dnsLabel`
-  - [ ] `uuid`
+  - [x] `uuid`
   - [ ] `oid`
   - [ ] `mongoId`
   - [ ] `usZip5`
