@@ -86,7 +86,7 @@ This is currently in development.
   - [ ] `ipv4`
   - [ ] `ipv6`
   - [ ] `ip`
-  - [ ] `money`
+  - [x] `money`
   - [ ] `iso3166-1`
   - [ ] `iso3166-2`
   - [ ] `iso3166-3`
@@ -113,7 +113,7 @@ This is currently in development.
   - [ ] `unc`
   - [ ] `duid`
   - [ ] `geoCode`
-  - [ ] `interfaceName`
+  - [ ] `unixInterfaceName`
   - [ ] `unixFileName`
   - [ ] `unixPath`
   - [ ] `windowsFileName`
