@@ -2,11 +2,11 @@
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
-  name: blob32
+  name: blob24
   namespace: default
   labels:
-    preql.tech/fullSingularName: '32-bit Length Indicator Blob'
-    preql.tech/fullPluralName: '32-bit Length Indicator Blobs'
+    preql.tech/fullSingularName: '24-bit Length Indicator Blob'
+    preql.tech/fullPluralName: '24-bit Length Indicator Blobs'
     preql.tech/standard: 'true'
     preql.tech/category: 'Binary'
     # preql.tech/storageSizeInBytes: ''
@@ -16,7 +16,7 @@ metadata:
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 32-bit unsigned integer.'
+    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 24-bit unsigned integer.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
@@ -25,7 +25,7 @@ metadata:
 spec:
   jsonEquivalent: 'string'
   minLength: 0
-  maxLength: 4294967295
+  maxLength: 16777215
   targets:
     bson:
       nativeType: 'binData'

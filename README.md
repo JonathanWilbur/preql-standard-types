@@ -166,3 +166,6 @@ This is currently in development.
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
 - [ ] Add length indicators to the end of LDAP syntaxes
+- [ ] Add these labels:
+  - [ ] Theoretical minimum storage in bytes
+  - [ ] Theoretical maximum storage in bytes

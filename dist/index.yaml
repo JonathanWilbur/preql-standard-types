@@ -1527,6 +1527,60 @@ spec:
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
+  name: text24
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: '24-bit Length Indicator Text'
+    preql.tech/fullPluralName: '24-bit Length Indicator Text'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'String'
+    # preql.tech/storageSizeInBytes: ''
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'Variable-length string whose length is indicated by an 24-bit unsigned integer.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    # preql.tech/definingSpecification: ''
+    # preql.tech/definingSpecificationURI: ''
+    preql.tech/exampleValue: 'Hello world!'
+spec:
+  jsonEquivalent: 'string'
+  minLength: 0
+  maxLength: 16777215
+  targets:
+    bson:
+      nativeType: 'string'
+    cql:
+      nativeType: 'text'
+    elasticsearch:
+      nativeType: 'text'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'MEDIUMTEXT'
+    mysql:
+      nativeType: 'MEDIUMTEXT'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
+      ldapMatchingRule: 'caseIgnoreMatch'
+      ldapOrderingRule: 'caseIgnoreOrderingMatch'
+      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
+    plsql:
+      nativeType: 'LONG'
+    postgresql:
+      nativeType: 'text'
+    sqlite:
+      nativeType: 'TEXT'
+    tsql:
+      nativeType: 'ntext'
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
   name: locale
   namespace: default
   labels:
@@ -1624,7 +1678,7 @@ metadata:
 spec:
   jsonEquivalent: 'string'
   minLength: 0
-  maxLength: 16777215
+  maxLength: 4294967295
   targets:
     bson:
       nativeType: 'string'
@@ -1635,9 +1689,9 @@ spec:
     json:
       nativeType: 'string'
     mariadb:
-      nativeType: 'MEDIUMTEXT'
+      nativeType: 'LONGTEXT'
     mysql:
-      nativeType: 'MEDIUMTEXT'
+      nativeType: 'LONGTEXT'
     openldap:
       nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
       ldapMatchingRule: 'caseIgnoreMatch'
@@ -1651,43 +1705,6 @@ spec:
       nativeType: 'TEXT'
     tsql:
       nativeType: 'ntext'
----
-apiVersion: preq/1.0.0
-kind: DataType
-metadata:
-  name: blob64
-  namespace: default
-  labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
-    preql.tech/standard: 'true'
-    preql.tech/category: ''
-    # preql.tech/storageSizeInBytes: ''
-    # preql.tech/bits: ''
-    # preql.tech/signed: ''
-    # preql.tech/country: ''
-    # preql.tech/objectIdentifier: ''
-    # preql.tech/uuid: ''
-  annotations:
-    preql.tech/description: ''
-    preql.tech/author: 'Jonathan M. Wilbur'
-    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    # preql.tech/definingSpecification: ''
-    # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
-spec:
-  jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -2697,10 +2714,10 @@ metadata:
   name: blob32
   namespace: default
   labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
+    preql.tech/fullSingularName: '32-bit Length Indicator Blob'
+    preql.tech/fullPluralName: '32-bit Length Indicator Blobs'
     preql.tech/standard: 'true'
-    preql.tech/category: ''
+    preql.tech/category: 'Binary'
     # preql.tech/storageSizeInBytes: ''
     # preql.tech/bits: ''
     # preql.tech/signed: ''
@@ -2708,25 +2725,41 @@ metadata:
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: ''
+    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 32-bit unsigned integer.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
     # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
+    # preql.tech/exampleValue: ''
 spec:
   jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
+  minLength: 0
+  maxLength: 4294967295
+  targets:
+    bson:
+      nativeType: 'binData'
+    cql:
+      nativeType: 'blob'
+    elasticsearch:
+      nativeType: 'binary'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'BLOB'
+    mysql:
+      nativeType: 'BLOB'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.40'
+      ldapMatchingRule: 'octetStringMatch'
+      ldapOrderingRule: 'octetStringOrderingMatch'
+    plsql:
+      nativeType: 'BLOB'
+    postgresql:
+      nativeType: 'bytea'
+    sqlite:
+      nativeType: 'BLOB'
+    tsql:
+      nativeType: 'binary'
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -2764,60 +2797,6 @@ spec:
   # setters:
   #   - type:
   targets: {}
----
-apiVersion: preq/1.0.0
-kind: DataType
-metadata:
-  name: text64
-  namespace: default
-  labels:
-    preql.tech/fullSingularName: '64-bit Length Indicator Text'
-    preql.tech/fullPluralName: '64-bit Length Indicator Text'
-    preql.tech/standard: 'true'
-    preql.tech/category: 'String'
-    # preql.tech/storageSizeInBytes: ''
-    # preql.tech/bits: ''
-    # preql.tech/signed: ''
-    # preql.tech/country: ''
-    # preql.tech/objectIdentifier: ''
-    # preql.tech/uuid: ''
-  annotations:
-    preql.tech/description: 'Variable-length string whose length is indicated by an 64-bit unsigned integer.'
-    preql.tech/author: 'Jonathan M. Wilbur'
-    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    # preql.tech/definingSpecification: ''
-    # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: 'Hello world!'
-spec:
-  jsonEquivalent: 'string'
-  minLength: 0
-  maxLength: 4294967295
-  targets:
-    bson:
-      nativeType: 'string'
-    cql:
-      nativeType: 'text'
-    elasticsearch:
-      nativeType: 'text'
-    json:
-      nativeType: 'string'
-    mariadb:
-      nativeType: 'LONGTEXT'
-    mysql:
-      nativeType: 'LONGTEXT'
-    openldap:
-      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
-      ldapMatchingRule: 'caseIgnoreMatch'
-      ldapOrderingRule: 'caseIgnoreOrderingMatch'
-      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
-    plsql:
-      nativeType: 'LONG'
-    postgresql:
-      nativeType: 'text'
-    sqlite:
-      nativeType: 'TEXT'
-    tsql:
-      nativeType: 'ntext'
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -2946,6 +2925,59 @@ spec:
       nativeType: 'TEXT'
     tsql:
       nativeType: 'NVARCHAR(64)'
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
+  name: blob24
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: '24-bit Length Indicator Blob'
+    preql.tech/fullPluralName: '24-bit Length Indicator Blobs'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'Binary'
+    # preql.tech/storageSizeInBytes: ''
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 24-bit unsigned integer.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    # preql.tech/definingSpecification: ''
+    # preql.tech/definingSpecificationURI: ''
+    # preql.tech/exampleValue: ''
+spec:
+  jsonEquivalent: 'string'
+  minLength: 0
+  maxLength: 16777215
+  targets:
+    bson:
+      nativeType: 'binData'
+    cql:
+      nativeType: 'blob'
+    elasticsearch:
+      nativeType: 'binary'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'BLOB'
+    mysql:
+      nativeType: 'BLOB'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.40'
+      ldapMatchingRule: 'octetStringMatch'
+      ldapOrderingRule: 'octetStringOrderingMatch'
+    plsql:
+      nativeType: 'BLOB'
+    postgresql:
+      nativeType: 'bytea'
+    sqlite:
+      nativeType: 'BLOB'
+    tsql:
+      nativeType: 'binary'
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -4994,10 +5026,10 @@ metadata:
   name: blob8
   namespace: default
   labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
+    preql.tech/fullSingularName: '8-bit Length Indicator Blob'
+    preql.tech/fullPluralName: '8-bit Length Indicator Blobs'
     preql.tech/standard: 'true'
-    preql.tech/category: ''
+    preql.tech/category: 'Binary'
     # preql.tech/storageSizeInBytes: ''
     # preql.tech/bits: ''
     # preql.tech/signed: ''
@@ -5005,25 +5037,41 @@ metadata:
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: ''
+    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 8-bit unsigned integer.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
     # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
+    # preql.tech/exampleValue: ''
 spec:
   jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
+  minLength: 0
+  maxLength: 255
+  targets:
+    bson:
+      nativeType: 'binData'
+    cql:
+      nativeType: 'blob'
+    elasticsearch:
+      nativeType: 'binary'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'TINYBLOB'
+    mysql:
+      nativeType: 'TINYBLOB'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.40'
+      ldapMatchingRule: 'octetStringMatch'
+      ldapOrderingRule: 'octetStringOrderingMatch'
+    plsql:
+      nativeType: 'BLOB'
+    postgresql:
+      nativeType: 'bytea'
+    sqlite:
+      nativeType: 'BLOB'
+    tsql:
+      nativeType: 'binary(255)'
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -5327,10 +5375,10 @@ metadata:
   name: blob16
   namespace: default
   labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
+    preql.tech/fullSingularName: '16-bit Length Indicator Blob'
+    preql.tech/fullPluralName: '16-bit Length Indicator Blobs'
     preql.tech/standard: 'true'
-    preql.tech/category: ''
+    preql.tech/category: 'Binary'
     # preql.tech/storageSizeInBytes: ''
     # preql.tech/bits: ''
     # preql.tech/signed: ''
@@ -5338,25 +5386,41 @@ metadata:
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: ''
+    preql.tech/description: 'Variable-length bytes array whose length is indicated by an 16-bit unsigned integer.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
     # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
+    # preql.tech/exampleValue: ''
 spec:
   jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
+  minLength: 0
+  maxLength: 65535
+  targets:
+    bson:
+      nativeType: 'binData'
+    cql:
+      nativeType: 'blob'
+    elasticsearch:
+      nativeType: 'binary'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'BLOB'
+    mysql:
+      nativeType: 'BLOB'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.40'
+      ldapMatchingRule: 'octetStringMatch'
+      ldapOrderingRule: 'octetStringOrderingMatch'
+    plsql:
+      nativeType: 'BLOB'
+    postgresql:
+      nativeType: 'bytea'
+    sqlite:
+      nativeType: 'BLOB'
+    tsql:
+      nativeType: 'binary(65535)'
 ---
 apiVersion: preq/1.0.0
 kind: DataType

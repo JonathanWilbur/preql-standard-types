@@ -25,7 +25,7 @@ metadata:
 spec:
   jsonEquivalent: 'string'
   minLength: 0
-  maxLength: 16777215
+  maxLength: 4294967295
   targets:
     bson:
       nativeType: 'string'
@@ -36,9 +36,9 @@ spec:
     json:
       nativeType: 'string'
     mariadb:
-      nativeType: 'MEDIUMTEXT'
+      nativeType: 'LONGTEXT'
     mysql:
-      nativeType: 'MEDIUMTEXT'
+      nativeType: 'LONGTEXT'
     openldap:
       nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
       ldapMatchingRule: 'caseIgnoreMatch'
