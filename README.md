@@ -70,7 +70,7 @@ This is currently in development.
   - [ ] `fqdn`
   - [ ] `dnsLabel`
   - [x] `uuid`
-  - [ ] `oid`
+  - [x] `oid`
   - [ ] `mongoId`
   - [ ] `usZip5`
   - [ ] `usZip9`
@@ -83,9 +83,9 @@ This is currently in development.
   - [ ] `mac`
   - [ ] `eui`
   - [ ] `oui`
-  - [ ] `ipv4`
-  - [ ] `ipv6`
-  - [ ] `ip`
+  - [x] `ipv4`
+  - [x] `ipv6`
+  - [x] `ip`
   - [x] `money`
   - [ ] `iso3166-1`
   - [ ] `iso3166-2`
@@ -111,14 +111,13 @@ This is currently in development.
   - [ ] `urn`
   - [ ] `iri`
   - [ ] `unc`
-  - [ ] `duid`
   - [ ] `geoCode`
   - [ ] `unixInterfaceName`
   - [ ] `unixFileName`
   - [ ] `unixPath`
   - [ ] `windowsFileName`
   - [ ] `windowsPath`
-  - [ ] `sid`
+  - [x] `sid`
   - [ ] `dn`
   - [ ] `rdn`
   - [ ] `dnsRecordType`
@@ -169,3 +168,5 @@ This is currently in development.
 - [ ] Add these labels:
   - [ ] Theoretical minimum storage in bytes
   - [ ] Theoretical maximum storage in bytes
+- [ ] Review backslashes use in regex patterns.
+- [ ] Review use of DirectoryString in `openldap` target.
