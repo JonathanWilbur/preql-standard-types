@@ -170,3 +170,4 @@ This is currently in development.
   - [ ] Theoretical maximum storage in bytes
 - [ ] Review backslashes use in regex patterns.
 - [ ] Review use of DirectoryString in `openldap` target.
+- [ ] Add .NET Class label.
