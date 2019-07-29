@@ -39,7 +39,7 @@ This is currently in development.
   - [x] `blob16`
   - [x] `blob32`
   - [x] `blob64`
-  - [ ] `personName`
+  - [x] `personName`
   - [ ] `phone`
   - [ ] `email`
   - [ ] `fqdn`
