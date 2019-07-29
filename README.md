@@ -138,9 +138,8 @@ This is currently in development.
   - [x] `compass4` (N, E, S, W)
   - [x] `compass8` (N, NE, E, etc.)
   - [x] `compass16` (N, NNE, ENE, etc.)
-  - [ ] `latitude`
-  - [ ] `longitude`
-  - [ ] `degrees`
+  - [x] `latitude`
+  - [x] `longitude`
   - [ ] `fahrenheit`
   - [ ] `celcius` (Minimum -273.15)
   - [ ] `kelvins`
@@ -161,11 +160,11 @@ This is currently in development.
   - [ ] `race`
   - [ ] `mla`
   - [ ] `apa`
-  - [ ] `html`
-  - [ ] `xml`
-  - [ ] `json`
-  - [ ] `yaml`
-  - [ ] `toml`
+  - [x] `html`
+  - [x] `xml`
+  - [x] `json`
+  - [x] `yaml`
+  - [x] `toml`
   - [ ] `httpCode`
   - [ ] `ftpCode`
   - [ ] `smtpCode`
@@ -184,3 +183,6 @@ This is currently in development.
 - [ ] Review backslashes use in regex patterns.
 - [ ] Review use of DirectoryString in `openldap` target.
 - [ ] Add .NET Class label.
+- [ ] Add `units` label
+- [ ] Add `unitsSymbol` label
+- [ ] Add `mathematicalSymbol` label
