@@ -135,9 +135,9 @@ This is currently in development.
   - [ ] `rdn`
   - [ ] `dnsRecordType`
   - [ ] `nucleotide`
-  - [ ] `compass4` (N, E, S, W)
-  - [ ] `compass8` (N, NE, E, etc.)
-  - [ ] `compass16` (N, NNE, ENE, etc.)
+  - [x] `compass4` (N, E, S, W)
+  - [x] `compass8` (N, NE, E, etc.)
+  - [x] `compass16` (N, NNE, ENE, etc.)
   - [ ] `latitude`
   - [ ] `longitude`
   - [ ] `degrees`
