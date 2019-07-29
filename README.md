@@ -40,10 +40,10 @@ This is currently in development.
   - [x] `blob32`
   - [x] `blob64`
   - [x] `personName`
-  - [ ] `phone`
-  - [ ] `email`
-  - [ ] `fqdn`
-  - [ ] `dnsLabel`
+  - [x] `phone`
+  - [x] `email`
+  - [x] `fqdn`
+  - [x] `dnsLabel`
   - [x] `uuid`
   - [x] `oid`
   - [x] `bsonId`
