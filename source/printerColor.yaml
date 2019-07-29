@@ -5,33 +5,28 @@ metadata:
   name: printerColor
   namespace: default
   labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
+    preql.tech/fullSingularName: 'Printer Ink Color'
+    preql.tech/fullPluralName: 'Printer Ink Color'
     preql.tech/standard: 'true'
-    preql.tech/category: ''
-    # preql.tech/storageSizeInBytes: ''
-    # preql.tech/bits: ''
+    preql.tech/category: 'Technology'
+    preql.tech/storageSizeInBytes: '1'
+    preql.tech/bits: '8'
     # preql.tech/signed: ''
     # preql.tech/country: ''
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: ''
+    preql.tech/description: 'Printer Ink Color'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
     # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
+    preql.tech/exampleValue: 'Y'
 spec:
   jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
+  name: 'printerColor'
+  values:
+    - 'C'
+    - 'M'
+    - 'Y'
+    - 'K'

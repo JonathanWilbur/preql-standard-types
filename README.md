@@ -107,7 +107,6 @@ This is currently in development.
   - [ ] `dn`
   - [ ] `rdn`
   - [ ] `dnsRecordType`
-  - [ ] `nucleotide`
   - [x] `compass4` (N, E, S, W)
   - [x] `compass8` (N, NE, E, etc.)
   - [x] `compass16` (N, NNE, ENE, etc.)
@@ -129,10 +128,6 @@ This is currently in development.
     - [ ] `sha256`
     - [ ] `sha384`
     - [ ] `sha512`
-  - [ ] `eyeColor`
-  - [ ] `race`
-  - [ ] `mla`
-  - [ ] `apa`
   - [x] `html`
   - [x] `xml`
   - [x] `json`
@@ -146,6 +141,8 @@ This is currently in development.
   - [ ] `leftRight`
   - [ ] `upDown`
   - [ ] `direction4`
+  - [ ] `password`
+  - [ ] `key`
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
@@ -159,3 +156,13 @@ This is currently in development.
 - [ ] Add `units` label
 - [ ] Add `unitsSymbol` label
 - [ ] Add `mathematicalSymbol` label
+- [ ] Add `alert` label
+- [ ] Add `operatingSystem` label
+- [ ] Add hash security-related label
+- [ ] Add `deprecated` label
+- [ ] Create Secure-Text type
+  - [ ] Filter out SQL injection
+  - [ ] Filter out XSS tags
+  - [ ] Filter out nulls
+  - [ ] Filter out LDAP injection
+  - [ ] Filter out Directory Traversal
