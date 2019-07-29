@@ -76,7 +76,7 @@ This is currently in development.
   - [x] `second`
   - [x] `millisecond`
   - [ ] Spatial types?
-  - [ ] `locale`
+  - [x] `locale`
   - [ ] `mimeType`
   - [x] `uri`
   - [x] `urn`
