@@ -75,7 +75,7 @@ This is currently in development.
   - [ ] `usZip5`
   - [ ] `usZip9`
   - [ ] `handle` (Twitter, Gab, Discord)
-  - [ ] `sex`
+  - [x] `sex`
   - [ ] `timeZone`
   - [ ] `ean` / `upc`
   - [ ] `gtin`

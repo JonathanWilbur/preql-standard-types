@@ -5,33 +5,32 @@ metadata:
   name: compass8
   namespace: default
   labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
+    preql.tech/fullSingularName: 'Intercardinal Direction'
+    preql.tech/fullPluralName: 'Intercardinal Directions'
     preql.tech/standard: 'true'
-    preql.tech/category: ''
-    # preql.tech/storageSizeInBytes: ''
-    # preql.tech/bits: ''
+    preql.tech/category: 'Geography'
+    preql.tech/storageSizeInBytes: '2'
+    preql.tech/bits: '16'
     # preql.tech/signed: ''
     # preql.tech/country: ''
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: ''
+    preql.tech/description: 'One of the four cardinal directions on a compass, or the four diagonals in between them.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
     # preql.tech/definingSpecification: ''
     # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: ''
+    preql.tech/exampleValue: 'NE'
 spec:
   jsonEquivalent: 'string'
-  # name:
-  # values:
-  # minimum: 0
-  # maximum: 1
-  # minLength: 0
-  # maxLength: 1
-  # regexes:
-  #   pcre:
-  # setters:
-  #   - type:
-  targets: {}
+  name: 'compass8'
+  values:
+    - 'N'
+    - 'NE'
+    - 'E'
+    - 'SE'
+    - 'S'
+    - 'SW'
+    - 'W'
+    - 'NW'
