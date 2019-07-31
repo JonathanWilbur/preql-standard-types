@@ -98,7 +98,7 @@ This is currently in development.
   - [x] `millisecond`
   - [ ] Spatial types?
   - [x] `locale`
-  - [ ] `mimeType`
+  - [x] `mimeType`
   - [x] `uri`
   - [x] `urn`
   - [x] `url`
