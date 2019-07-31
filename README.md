@@ -49,7 +49,7 @@ This is currently in development.
   - [x] `bsonId`
   - [x] ~~`usZip5`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
   - [x] ~~`usZip9`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
-  - [ ] `handle` (Twitter, Gab, Discord)
+  - [x] `handle` (Twitter, Gab, Discord)
   - [x] `sex`
   - [ ] `timeZone`
   - [ ] `ean` / `upc`

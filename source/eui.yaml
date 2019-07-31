@@ -24,6 +24,8 @@ metadata:
     preql.tech/exampleValue: '0A9CDD825723'
 spec:
   jsonEquivalent: 'string'
+  minLength: 12
+  maxLength: 12
   regexes:
     pcre:
       eui48:
