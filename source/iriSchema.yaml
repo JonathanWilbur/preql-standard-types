@@ -1,14 +1,16 @@
 ---
+# From RFC 3987
+# scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
-  name: fqdn
+  name: iriSchema
   namespace: default
   labels:
-    preql.tech/fullSingularName: 'Fully-Qualified Domain Name'
-    preql.tech/fullPluralName: 'Fully-Qualified Domain Names'
+    preql.tech/fullSingularName: 'Internationalized Resource Identifier Schema'
+    preql.tech/fullPluralName: 'Internationalized Resource Identifier Schema'
     preql.tech/standard: 'true'
-    preql.tech/category: 'Identifiers'
+    # preql.tech/category: ''
     # preql.tech/storageSizeInBytes: ''
     # preql.tech/bits: ''
     # preql.tech/signed: ''
@@ -17,23 +19,22 @@ metadata:
     # preql.tech/uuid: ''
   annotations:
     preql.tech/description: >
-      A Domain Name System-based name for a host or subdomain that concatenates
-      the entire hierarchy of DNS labels up to and (implicitly) including the
-      root zone label.
+      The part of a Internationalized Resource Identifier before the colon.
+      This also suffices for a Uniform Resource Identifier.
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    # preql.tech/definingSpecification: ''
-    # preql.tech/definingSpecificationURI: ''
-    preql.tech/exampleValue: 'jonathan.wilbur.space'
+    preql.tech/definingSpecification: 'IETF RFC 3987'
+    preql.tech/definingSpecificationURI: 'https://tools.ietf.org/html/rfc3987'
+    preql.tech/exampleValue: 'http'
 spec:
   jsonEquivalent: 'string'
   minLength: 0
-  maxLength: 255
+  maxLength: 16
   regexes:
     pcre:
-      label:
-        - pattern: >
-            ^((\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?(?:\\.(\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?)*
+      schema:
+        - pattern: '^[A-Z][A-Z0-9+\\-\\.]*'
+          positive: True
   setters:
     - type: 'trim'
       side: 'both'
@@ -49,19 +50,19 @@ spec:
     json:
       nativeType: 'string'
     mariadb:
-      nativeType: 'VARCHAR(255)'
+      nativeType: 'VARCHAR(16)'
     mysql:
-      nativeType: 'VARCHAR(255)'
+      nativeType: 'VARCHAR(16)'
     openldap:
       nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
       ldapMatchingRule: 'caseIgnoreMatch'
       ldapOrderingRule: 'caseIgnoreOrderingMatch'
       ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
     plsql:
-      nativeType: 'VARCHAR2(255 CHAR)'
+      nativeType: 'VARCHAR2(16 CHAR)'
     postgresql:
-      nativeType: 'varchar(255)'
+      nativeType: 'varchar(16)'
     sqlite:
       nativeType: 'TEXT'
     tsql:
-      nativeType: 'NVARCHAR(255)'
+      nativeType: 'NVARCHAR(16)'

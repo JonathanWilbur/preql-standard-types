@@ -1,4 +1,23 @@
 ---
+# From RFC 2045:
+# content := "Content-Type" ":" type "/" subtype
+#            *(";" parameter)
+#            ; Matching of media type and subtype
+#            ; is ALWAYS case-insensitive.
+# type := discrete-type / composite-type
+# discrete-type := "text" / "image" / "audio" / "video" / "application" / extension-token
+# extension-token := ietf-token / x-token
+# ietf-token := <An extension token defined by a
+#                 standards-track RFC and registered
+#                 with IANA.>
+# x-token := <The two characters "X-" or "x-" followed, with
+#             no  intervening white space, by any token>
+# composite-type := "message" / "multipart" / extension-token
+# subtype := extension-token / iana-token
+# parameter := attribute "=" value
+# value := token / quoted-string
+# token := 1*<any (US-ASCII) CHAR except SPACE, CTLs, or tspecials>
+# attribute := token ; ALWAYS case-insensitive.
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
@@ -61,24 +80,3 @@ spec:
       nativeType: 'TEXT'
     tsql:
       nativeType: 'NVARCHAR(128)'
-
-
-
-# content := "Content-Type" ":" type "/" subtype
-#            *(";" parameter)
-#            ; Matching of media type and subtype
-#            ; is ALWAYS case-insensitive.
-# type := discrete-type / composite-type
-# discrete-type := "text" / "image" / "audio" / "video" / "application" / extension-token
-# extension-token := ietf-token / x-token
-# ietf-token := <An extension token defined by a
-#                 standards-track RFC and registered
-#                 with IANA.>
-# x-token := <The two characters "X-" or "x-" followed, with
-#             no  intervening white space, by any token>
-# composite-type := "message" / "multipart" / extension-token
-# subtype := extension-token / iana-token
-# parameter := attribute "=" value
-# value := token / quoted-string
-# token := 1*<any (US-ASCII) CHAR except SPACE, CTLs, or tspecials>
-# attribute := token ; ALWAYS case-insensitive.

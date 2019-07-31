@@ -44,6 +44,7 @@ This is currently in development.
   - [x] `email`
   - [x] `fqdn`
   - [x] `dnsLabel`
+  - [ ] `hostname`
   - [x] `uuid`
   - [x] `oid`
   - [x] `bsonId`
@@ -102,7 +103,7 @@ This is currently in development.
   - [x] `uri`
   - [x] `urn`
   - [x] `url`
-  - [ ] `urlSchema`
+  - [x] ~~`urlSchema`~~ (Same thing as the `irlSchema`.)
   - [ ] `urlUsername`
   - [ ] `urlPassword`
   - [ ] `urlPath`
@@ -111,13 +112,13 @@ This is currently in development.
   - [x] `iri`
   - [ ] `irn`
   - [x] `irl`
-  - [ ] `irlSchema`
+  - [x] `irlSchema`
   - [ ] `irlUsername`
   - [ ] `irlPassword`
   - [ ] `irlPath`
   - [ ] `irlQuery`
   - [ ] `irlFragment`
-  - [ ] `unc`
+  - [x] `unc`
   - [ ] `geoCode`
   - [ ] `unixInterfaceName`
   - [ ] `unixFileName`
@@ -182,6 +183,7 @@ This is currently in development.
 - [ ] Add `operatingSystem` label
 - [ ] Add hash security-related label
 - [ ] Add `deprecated` label
+- [ ] Add `definingOrganization` annotation
 - [ ] Create Secure-Text type
   - [ ] Filter out SQL injection
   - [ ] Filter out XSS tags
