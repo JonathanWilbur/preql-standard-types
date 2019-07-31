@@ -81,10 +81,10 @@ This is currently in development.
   - [x] `iso3166-1-alpha-3`
   - [x] `iso3166-1-numeric`
   - [x] `iso3166-2`
-  - [ ] `iso639-1`
-  - [ ] `iso639-2`
-  - [ ] `iso639-3`
-  - [ ] `iso639-5`
+  - [x] `iso639-1`
+  - [x] `iso639-2`
+  - [x] `iso639-3`
+  - [x] `iso639-5`
   - [x] `date`
   - [x] `time`
   - [x] `datetime`
