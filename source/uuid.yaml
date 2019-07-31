@@ -38,7 +38,7 @@ spec:
     bson:
       nativeType: 'string'
     cql:
-      nativeType: 'text'
+      nativeType: 'uuid'
     elasticsearch:
       nativeType: 'keyword'
     json:
@@ -58,7 +58,7 @@ spec:
     plsql:
       nativeType: 'CHAR(36 CHAR)'
     postgresql:
-      nativeType: 'char(36)'
+      nativeType: 'uuid'
     sqlite:
       nativeType: 'TEXT'
     tsql:

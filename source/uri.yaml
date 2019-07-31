@@ -58,7 +58,7 @@ spec:
       ldapOrderingRule: 'caseIgnoreOrderingMatch'
       ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
     plsql:
-      nativeType: 'VARCHAR2(512 CHAR)'
+      nativeType: 'URI'
     postgresql:
       nativeType: 'varchar(512)'
     sqlite:

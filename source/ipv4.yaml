@@ -40,7 +40,7 @@ spec:
     cql:
       nativeType: 'text'
     elasticsearch:
-      nativeType: 'keyword'
+      nativeType: 'ip'
     json:
       nativeType: 'string'
     mariadb:

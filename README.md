@@ -47,16 +47,15 @@ This is currently in development.
   - [x] `uuid`
   - [x] `oid`
   - [x] `bsonId`
-  - [ ] `usZip5`
-  - [ ] `usZip9`
+  - [x] ~~`usZip5`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
+  - [x] ~~`usZip9`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
   - [ ] `handle` (Twitter, Gab, Discord)
   - [x] `sex`
   - [ ] `timeZone`
   - [ ] `ean` / `upc`
   - [ ] `gtin`
   - [ ] `ssn`
-  - [ ] `mac`
-  - [ ] `eui`
+  - [ ] `eui48`
   - [ ] `oui`
   - [x] `ipv4`
   - [x] `ipv6`
@@ -136,8 +135,8 @@ This is currently in development.
   - [ ] `httpCode`
   - [ ] `ftpCode`
   - [ ] `smtpCode`
-  - [ ] `pixelColor`
-  - [ ] `printerColor`
+  - [x] `pixelColor`
+  - [x] `printerColor`
   - [ ] `leftRight`
   - [ ] `upDown`
   - [ ] `direction4`
