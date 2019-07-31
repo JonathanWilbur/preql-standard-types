@@ -77,8 +77,14 @@ This is currently in development.
   - [x] `ipv6`
   - [x] `ip`
   - [x] `money`
-  - [ ] `iso3166-1`
-  - [ ] `iso639`?
+  - [x] `iso3166-1-alpha-2`
+  - [x] `iso3166-1-alpha-3`
+  - [x] `iso3166-1-numeric`
+  - [x] `iso3166-2`
+  - [ ] `iso639-1`
+  - [ ] `iso639-2`
+  - [ ] `iso639-3`
+  - [ ] `iso639-5`
   - [x] `date`
   - [x] `time`
   - [x] `datetime`
