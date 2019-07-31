@@ -55,7 +55,7 @@ This is currently in development.
   - [ ] `ean` / `upc`
   - [ ] `gtin`
   - [ ] `ssn`
-  - [ ] `eui48`
+  - [x] `eui48`
   - [ ] `oui`
   - [x] `ipv4`
   - [x] `ipv6`
