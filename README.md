@@ -51,9 +51,22 @@ This is currently in development.
   - [x] ~~`usZip9`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
   - [x] `handle` (Twitter, Gab, Discord)
   - [x] `sex`
-  - [ ] `timeZone`
-  - [ ] `ean` / `upc`
-  - [ ] `gtin`
+  - [x] `timeZone`
+  - [ ] `ean2`
+  - [ ] `ean5`
+  - [ ] `ean8`
+  - [ ] `ean13`
+  - [ ] `upca`
+  - [ ] `upcb`
+  - [ ] `upcc`
+  - [ ] `upcd`
+  - [ ] `upce`
+  - [ ] `upc2`
+  - [ ] `upc5`
+  - [ ] `gtin8`
+  - [ ] `gtin12`
+  - [ ] `gtin13`
+  - [ ] `gtin14`
   - [ ] `ssn`
   - [x] `eui48`
   - [ ] `oui`
