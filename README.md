@@ -47,8 +47,6 @@ This is currently in development.
   - [x] `uuid`
   - [x] `oid`
   - [x] `bsonId`
-  - [x] ~~`usZip5`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
-  - [x] ~~`usZip9`~~ (Removed because it is bad practice to use country-specific fields, and in other countries, postal codes are not strictly numeric.)
   - [x] `handle` (Twitter, Gab, Discord)
   - [x] `sex`
   - [x] `timeZone`
@@ -69,7 +67,12 @@ This is currently in development.
   - [x] `gtin14`
   - [x] `ssn`
   - [x] `eui48`
-  - [ ] `oui`
+  - [x] `eui60`
+  - [x] `eui64`
+  - [x] `cdi32`
+  - [x] `cdi40`
+  - [x] `oui24`
+  - [x] `oui36`
   - [x] `ipv4`
   - [x] `ipv6`
   - [x] `ip`
@@ -155,6 +158,7 @@ This is currently in development.
   - [ ] `direction4`
   - [ ] `password`
   - [ ] `key`
+  - [ ] `postalCode`
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
