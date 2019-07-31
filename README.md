@@ -52,22 +52,22 @@ This is currently in development.
   - [x] `handle` (Twitter, Gab, Discord)
   - [x] `sex`
   - [x] `timeZone`
-  - [ ] `ean2`
-  - [ ] `ean5`
-  - [ ] `ean8`
-  - [ ] `ean13`
-  - [ ] `upca`
-  - [ ] `upcb`
-  - [ ] `upcc`
-  - [ ] `upcd`
-  - [ ] `upce`
-  - [ ] `upc2`
-  - [ ] `upc5`
-  - [ ] `gtin8`
-  - [ ] `gtin12`
-  - [ ] `gtin13`
-  - [ ] `gtin14`
-  - [ ] `ssn`
+  - [x] `ean2`
+  - [x] `ean5`
+  - [x] `ean8`
+  - [x] `ean13`
+  - [x] `upca`
+  - [x] `upcb`
+  - [x] `upcc`
+  - [x] `upcd`
+  - [x] `upce`
+  - [x] `upc2`
+  - [x] `upc5`
+  - [x] `gtin8`
+  - [x] `gtin12`
+  - [x] `gtin13`
+  - [x] `gtin14`
+  - [x] `ssn`
   - [x] `eui48`
   - [ ] `oui`
   - [x] `ipv4`
