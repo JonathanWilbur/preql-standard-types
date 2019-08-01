@@ -122,8 +122,8 @@ This is currently in development.
   - [x] `plusCode`
   - [x] `unixFileName`
   - [x] `unixPath`
-  - [ ] `windowsFileName`
-  - [ ] `windowsPath`
+  - [x] `windowsFileName`
+  - [x] `windowsPath`
   - [x] `sid`
   - [x] `dn`
   - [x] `rdn`
@@ -133,9 +133,9 @@ This is currently in development.
   - [x] `compass16` (N, NNE, ENE, etc.)
   - [x] `latitude`
   - [x] `longitude`
-  - [ ] `fahrenheit`
-  - [ ] `celcius` (Minimum -273.15)
-  - [ ] `kelvins`
+  - [x] `fahrenheit` (Minimum -459.67)
+  - [x] `celcius` (Minimum -273.15)
+  - [x] ~~kelvins~~ (This is simply an unsigned floating-point type.)
   - [x] `element`
   - [ ] `iupacName`
   - [ ] `chemicalFormula`
