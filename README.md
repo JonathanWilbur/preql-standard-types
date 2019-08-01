@@ -125,8 +125,8 @@ This is currently in development.
   - [ ] `windowsFileName`
   - [ ] `windowsPath`
   - [x] `sid`
-  - [ ] `dn`
-  - [ ] `rdn`
+  - [x] `dn`
+  - [x] `rdn`
   - [x] `dnsRecordType`
   - [x] `compass4` (N, E, S, W)
   - [x] `compass8` (N, NE, E, etc.)
@@ -161,6 +161,7 @@ This is currently in development.
   - [x] `printerColor`
   - [ ] `leftRight`
   - [ ] `upDown`
+  - [ ] `frontBack`
   - [ ] `direction4`
   - [ ] `password`
   - [ ] `key`
