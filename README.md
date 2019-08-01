@@ -119,8 +119,7 @@ This is currently in development.
   - [ ] `irlQuery`
   - [ ] `irlFragment`
   - [x] `unc`
-  - [ ] `plusCode`
-  - [ ] `unixInterfaceName`
+  - [x] `plusCode`
   - [ ] `unixFileName`
   - [ ] `unixPath`
   - [ ] `windowsFileName`
@@ -128,7 +127,7 @@ This is currently in development.
   - [x] `sid`
   - [ ] `dn`
   - [ ] `rdn`
-  - [ ] `dnsRecordType`
+  - [x] `dnsRecordType`
   - [x] `compass4` (N, E, S, W)
   - [x] `compass8` (N, NE, E, etc.)
   - [x] `compass16` (N, NNE, ENE, etc.)
@@ -165,7 +164,7 @@ This is currently in development.
   - [ ] `direction4`
   - [ ] `password`
   - [ ] `key`
-  - [ ] `postalCode`
+  - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
