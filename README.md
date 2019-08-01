@@ -119,7 +119,7 @@ This is currently in development.
   - [ ] `irlQuery`
   - [ ] `irlFragment`
   - [x] `unc`
-  - [ ] `geoCode`
+  - [ ] `plusCode`
   - [ ] `unixInterfaceName`
   - [ ] `unixFileName`
   - [ ] `unixPath`
