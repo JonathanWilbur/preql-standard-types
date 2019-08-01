@@ -120,8 +120,8 @@ This is currently in development.
   - [ ] `irlFragment`
   - [x] `unc`
   - [x] `plusCode`
-  - [ ] `unixFileName`
-  - [ ] `unixPath`
+  - [x] `unixFileName`
+  - [x] `unixPath`
   - [ ] `windowsFileName`
   - [ ] `windowsPath`
   - [x] `sid`
