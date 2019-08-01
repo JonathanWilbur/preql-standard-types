@@ -44,7 +44,7 @@ This is currently in development.
   - [x] `email`
   - [x] `fqdn`
   - [x] `dnsLabel`
-  - [ ] `hostname`
+  - [x] `hostname`
   - [x] `uuid`
   - [x] `oid`
   - [x] `bsonId`
@@ -115,9 +115,9 @@ This is currently in development.
   - [x] `irlSchema`
   - [ ] `irlUsername`
   - [ ] `irlPassword`
-  - [ ] `irlPath`
-  - [ ] `irlQuery`
-  - [ ] `irlFragment`
+  - [ ] `irlPath` (Check for leading "/"?)
+  - [ ] `irlQuery` (Check for leading "?"?)
+  - [ ] `irlFragment` (Check for leading "#"?)
   - [x] `unc`
   - [x] `plusCode`
   - [x] `unixFileName`
@@ -136,10 +136,25 @@ This is currently in development.
   - [x] `fahrenheit` (Minimum -459.67)
   - [x] `celcius` (Minimum -273.15)
   - [x] ~~kelvins~~ (This is simply an unsigned floating-point type.)
-  - [x] `element`
-  - [ ] `iupacName`
-  - [ ] `chemicalFormula`
-  - [ ] `doi`
+  - [ ] Chemistry
+    - [x] `element`
+    - [ ] `iupacName`
+    - [ ] `chemicalFormula`
+    - [ ] `casNumber`
+    - [ ] `bilsteinReference`
+    - [ ] `chebi`
+    - [ ] `chembl`
+    - [ ] `chemspider`
+    - [ ] `echaInfoCard`
+    - [ ] `ecNumber`
+    - [ ] `gmelinReference`
+    - [ ] `kegg`
+    - [ ] `mesh`
+    - [ ] `pubChemCID`
+    - [ ] `unNumber`
+    - [ ] `compToxDashboard`
+    - [ ] `smiles`
+  - [x] `doi`
   - [ ] `isbn`
   - [ ] `ticker`
   - [ ] `tlsCipher`
