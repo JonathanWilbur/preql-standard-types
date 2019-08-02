@@ -155,8 +155,38 @@ This is currently in development.
     - [ ] `compToxDashboard`
     - [ ] `smiles`
   - [x] `doi`
-  - [ ] `isbn`
+  - [ ] ISO International Identifiers (Remove dashes and spaces for each)
+    - [x] `isbn` (13-digits)
+    - [ ] `issn` (8-digits) (`^[0-9]{4}-[0-9]{3}[0-9xX]$`)
+    - [ ] `ismn` (13-digits)
+    - [ ] `isan` (12 bytes)
+    - [ ] `iswc` ("T", then 10 digits)
+    - [ ] `istc` (?)
+    - [ ] `isrc` (CC-999-YY-NNNNN)
+    - [ ] `iswn` (?)
+    - [ ] `isin` (12 alphanums)
+    - [ ] `iin` (6 digits)
+    - [ ] `bei` (unclear)
+    - [ ] `lei` (20-character, alpha-numeric code)
+    - [ ] `iban` (`CCKK-[0-9A-Z]{1,30}`)
+    - [ ] `isil` (`[A-Z0-9/\-:]{1,16}`)
+    - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
+    - [ ] `isni` (16 digits and a check character)
+    - [ ] `isci` (?)
+    - [ ] Maybe add some sort of check-digit functionality?
+  - [ ] `lccn` (Library of Congress Control Number?)
+  - [ ] `oclc`
+  - [ ] `bici`
+  - [ ] `sici`
+  - [ ] `asin`
+  - [ ] `coden`
+  - [ ] `ettn`
+  - [ ] `estc`
+  - [ ] `arn` (No explicit syntax other than that it must start with "arn:" and have a certain number of colons)
+  - [ ] `iqn` (`iqn.YYYY-MM.wilbur.space(?:targetName)?`)
   - [ ] `ticker`
+  - [ ] `airportCode`
+  - [ ] `usbNumber` (HHHH:HHHH)
   - [ ] `tlsCipher`
   - [ ] Hashes
     - [ ] `md5`
@@ -205,3 +235,7 @@ This is currently in development.
   - [ ] Filter out nulls
   - [ ] Filter out LDAP injection
   - [ ] Filter out Directory Traversal
+- [ ] Add the `$` to the end of regexes.
+  - I omitted this originally because I have had problems with MariaDB matching
+    strings when that is included.
+- [ ] Add multiple `exampleValue` fields.
