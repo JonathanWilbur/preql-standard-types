@@ -182,7 +182,7 @@ This is currently in development.
   - [ ] `coden`
   - [ ] `ettn`
   - [ ] `estc`
-  - [ ] `arn` (No explicit syntax other than that it must start with "arn:" and have a certain number of colons)
+  - [x] `arn`
   - [ ] `iqn` (`iqn.YYYY-MM.wilbur.space(?:targetName)?`)
   - [ ] `ticker`
   - [ ] `airportCode`
