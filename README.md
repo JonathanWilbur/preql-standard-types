@@ -159,7 +159,7 @@ This is currently in development.
     - [x] `isbn` (13-digits)
     - [x] `issn` (8-digits) (`^[0-9]{4}-[0-9]{3}[0-9xX]$`)
     - [x] `ismn` (13-digits)
-    - [ ] `isan` (12 bytes)
+    - [x] `isan` (12 bytes)
     - [ ] `iswc` ("T", then 10 digits)
     - [ ] `istc` (?)
     - [ ] `isrc` (CC-999-YY-NNNNN)

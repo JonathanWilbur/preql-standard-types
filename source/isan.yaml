@@ -2,34 +2,34 @@
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
-  name: issn
+  name: isan
   namespace: default
   labels:
-    preql.tech/fullSingularName: 'International Standard Serial Number'
-    preql.tech/fullPluralName: 'International Standard Serial Numbers'
+    preql.tech/fullSingularName: 'International Standard Audiovisual Number'
+    preql.tech/fullPluralName: 'International Standard Audiovisual Numbers'
     preql.tech/standard: 'true'
     preql.tech/category: 'Identifiers'
-    preql.tech/storageSizeInBytes: '9'
+    preql.tech/storageSizeInBytes: '12'
     # preql.tech/bits: ''
     # preql.tech/signed: ''
     # preql.tech/country: ''
     # preql.tech/objectIdentifier: ''
     # preql.tech/uuid: ''
   annotations:
-    preql.tech/description: 'A unique identifier that identifies a serial publication, such as a newspaper.'
+    preql.tech/description: 'A unique identifier that identifies audiovisual works.'
     preql.tech/author: 'Jonathan M. Wilbur'
     preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    preql.tech/definingSpecification: 'ISO 3297:2017'
-    preql.tech/definingSpecificationURI: 'https://www.iso.org/standard/73322.html'
-    preql.tech/exampleValue: '9783-161X'
+    preql.tech/definingSpecification: 'ISO 15706-1:2002'
+    preql.tech/definingSpecificationURI: 'https://www.iso.org/standard/28779.html'
+    preql.tech/exampleValue: '978316148410'
 spec:
   jsonEquivalent: 'string'
   minLength: 0
-  maxLength: 9
+  maxLength: 12
   regexes:
     pcre:
-      issn:
-        - pattern: '^\\d{4}-\\d{3}[0-9xX]$'
+      isan:
+        - pattern: '^\\d{12}'
   targets:
     bson:
       nativeType: 'string'
@@ -40,9 +40,9 @@ spec:
     json:
       nativeType: 'string'
     mariadb:
-      nativeType: 'CHAR(9)'
+      nativeType: 'CHAR(12)'
     mysql:
-      nativeType: 'CHAR(9)'
+      nativeType: 'CHAR(12)'
     openldap:
       # TODO: Make this NumericString or Integer
       nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
@@ -50,11 +50,11 @@ spec:
       ldapOrderingRule: 'caseIgnoreOrderingMatch'
       ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
     plsql:
-      nativeType: 'CHAR(9 CHAR)'
+      nativeType: 'CHAR(12 CHAR)'
     postgresql:
-      nativeType: 'char(9)'
+      nativeType: 'char(12)'
     sqlite:
       nativeType: 'TEXT'
     tsql:
-      nativeType: 'CHAR(9)'
+      nativeType: 'CHAR(12)'
 

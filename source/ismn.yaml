@@ -28,7 +28,7 @@ spec:
   maxLength: 13
   regexes:
     pcre:
-      isbn:
+      ismn:
         - pattern: '^\\d{13}'
   targets:
     bson:
