@@ -158,7 +158,7 @@ This is currently in development.
   - [ ] ISO International Identifiers (Remove dashes and spaces for each)
     - [x] `isbn` (13-digits)
     - [x] `issn` (8-digits) (`^[0-9]{4}-[0-9]{3}[0-9xX]$`)
-    - [ ] `ismn` (13-digits)
+    - [x] `ismn` (13-digits)
     - [ ] `isan` (12 bytes)
     - [ ] `iswc` ("T", then 10 digits)
     - [ ] `istc` (?)
