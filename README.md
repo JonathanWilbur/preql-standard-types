@@ -213,6 +213,7 @@ This is currently in development.
   - [ ] `password`
   - [ ] `key`
   - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
+  - [x] `duns`
   - [ ] `paymentCardNumber`
   - [ ] `imei`
   - [ ] `iccid`
