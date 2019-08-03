@@ -168,7 +168,7 @@ This is currently in development.
     - [ ] `iin` (6 digits)
     - [ ] `bei` (unclear)
     - [ ] `lei` (20-character, alpha-numeric code)
-    - [ ] `iban` (`CCKK-[0-9A-Z]{1,30}`)
+    - [x] `iban` (`CCKK[0-9A-Z]{1,30}`)
     - [x] `isil` (`[A-Z0-9/\-:]{1,16}`)
     - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
     - [x] `isni` (16 digits and a check character)
@@ -211,6 +211,8 @@ This is currently in development.
   - [ ] `password`
   - [ ] `key`
   - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
+  - [ ] `paymentCardNumber`
+  - [ ] `
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
