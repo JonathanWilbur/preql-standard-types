@@ -162,7 +162,7 @@ This is currently in development.
     - [x] `isan` (12 bytes)
     - [ ] `iswc` ("T", then 10 digits)
     - [ ] `istc` (?)
-    - [ ] `isrc` (CC-999-YY-NNNNN)
+    - [x] `isrc` (CC-999-YY-NNNNN)
     - [ ] `iswn` (?)
     - [x] `isin` (12 alphanums)
     - [x] `iin` (6 digits)
