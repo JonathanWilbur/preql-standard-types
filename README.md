@@ -169,7 +169,7 @@ This is currently in development.
     - [ ] `bei` (unclear)
     - [ ] `lei` (20-character, alpha-numeric code)
     - [ ] `iban` (`CCKK-[0-9A-Z]{1,30}`)
-    - [ ] `isil` (`[A-Z0-9/\-:]{1,16}`)
+    - [x] `isil` (`[A-Z0-9/\-:]{1,16}`)
     - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
     - [x] `isni` (16 digits and a check character)
     - [ ] `isci` (?)
