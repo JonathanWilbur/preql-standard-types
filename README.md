@@ -160,7 +160,7 @@ This is currently in development.
     - [x] `issn` (8-digits) (`^[0-9]{4}-[0-9]{3}[0-9xX]$`)
     - [x] `ismn` (13-digits)
     - [x] `isan` (12 bytes)
-    - [ ] `iswc` ("T", then 10 digits)
+    - [x] `iswc` ("T", then 10 digits)
     - [ ] `istc` (?)
     - [x] `isrc` (CC-999-YY-NNNNN)
     - [ ] `iswn` (?)
@@ -212,6 +212,8 @@ This is currently in development.
   - [ ] `key`
   - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
   - [ ] `paymentCardNumber`
+  - [ ] `imei`
+  - [ ] `grid` (https://en.wikipedia.org/wiki/Global_Release_Identifier)
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
