@@ -164,10 +164,10 @@ This is currently in development.
     - [ ] `istc` (?)
     - [ ] `isrc` (CC-999-YY-NNNNN)
     - [ ] `iswn` (?)
-    - [ ] `isin` (12 alphanums)
-    - [ ] `iin` (6 digits)
-    - [ ] `bei` (unclear)
-    - [ ] `lei` (20-character, alpha-numeric code)
+    - [x] `isin` (12 alphanums)
+    - [x] `iin` (6 digits)
+    - [ ] `bei` (?)
+    - [x] `lei` (20-character, alpha-numeric code)
     - [x] `iban` (`CCKK[0-9A-Z]{1,30}`)
     - [x] `isil` (`[A-Z0-9/\-:]{1,16}`)
     - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
@@ -212,7 +212,6 @@ This is currently in development.
   - [ ] `key`
   - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
   - [ ] `paymentCardNumber`
-  - [ ] `
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
@@ -230,6 +229,7 @@ This is currently in development.
 - [ ] Add `operatingSystem` label
 - [ ] Add hash security-related label
 - [ ] Add `deprecated` label
+- [ ] Add `urnNamespace` label (https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml)
 - [ ] Add `definingOrganization` annotation
 - [ ] Create Secure-Text type
   - [ ] Filter out SQL injection
@@ -242,3 +242,4 @@ This is currently in development.
     strings when that is included.
 - [ ] Add multiple `exampleValue` fields.
 - [ ] Add `specificationPublisher` annotation
+- [ ] Do you need to trim `CHAR` types?
