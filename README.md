@@ -170,7 +170,7 @@ This is currently in development.
     - [x] `lei` (20-character, alpha-numeric code)
     - [x] `iban` (`CCKK[0-9A-Z]{1,30}`)
     - [x] `isil` (`[A-Z0-9/\-:]{1,16}`)
-    - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
+    - [x] `isli` (`ISLI XXXXXX-XXXXX-X`)
     - [x] `isni` (16 digits and a check character)
     - [ ] `isci` (?)
     - [x] `mic`
@@ -185,7 +185,7 @@ This is currently in development.
   - [ ] `estc`
   - [x] `nsin`
   - [x] `arn`
-  - [ ] `iqn` (`iqn.YYYY-MM.wilbur.space(?:targetName)?`)
+  - [x] `iqn` (`iqn.YYYY-MM.wilbur.space(?:targetName)?`)
   - [ ] `ticker`
   - [ ] `airportCode`
   - [ ] `usbNumber` (HHHH:HHHH)

@@ -2777,6 +2777,66 @@ spec:
 apiVersion: preq/1.0.0
 kind: DataType
 metadata:
+  name: iqn
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: 'iSCSI Qualified Name'
+    preql.tech/fullPluralName: 'iSCSI Qualified Names'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'Identifiers'
+    # preql.tech/storageSizeInBytes: ''
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'An identifier for an iSCSI target.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    preql.tech/definingSpecification: 'IETF RFC 3720'
+    preql.tech/definingSpecificationURI: 'https://tools.ietf.org/html/rfc3720#section-3.2.6'
+    preql.tech/exampleValue: 'iqn.2001-04.com.example:storage:diskarrays-sn-a8675309'
+spec:
+  jsonEquivalent: 'string'
+  minLength: 13
+  maxLength: 128
+  regexes:
+    pcre:
+      iqn:
+        - pattern: '^iqn.[12]\\d{3}-[01]\\d(?:\\.(\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))+(?:\\p{X}*)?$'
+          positive: True
+  targets:
+    bson:
+      nativeType: 'string'
+    cql:
+      nativeType: 'text'
+    elasticsearch:
+      nativeType: 'keyword'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'VARCHAR(128)'
+    mysql:
+      nativeType: 'VARCHAR(128)'
+    openldap:
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
+      ldapMatchingRule: 'caseIgnoreMatch'
+      ldapOrderingRule: 'caseIgnoreOrderingMatch'
+      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
+    plsql:
+      nativeType: 'VARCHAR2(128 CHAR)'
+    postgresql:
+      nativeType: 'varchar(128)'
+    sqlite:
+      nativeType: 'TEXT'
+    tsql:
+      nativeType: 'VARCHAR(128)'
+
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
   name: unixPath
   namespace: default
   labels:
@@ -2898,6 +2958,67 @@ spec:
       nativeType: 'REAL'
     tsql:
       nativeType: 'float'
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
+  name: mic
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: 'Market Identifier Code'
+    preql.tech/fullPluralName: 'Market Identifier Codes'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'Identifiers'
+    preql.tech/storageSizeInBytes: '4'
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'A unique identifier that identifies a securities trading exchange.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    preql.tech/definingSpecification: 'ISO 10383:2012'
+    preql.tech/definingSpecificationURI: 'https://www.iso.org/standard/61067.html'
+    preql.tech/exampleValue: 'XNAS'
+spec:
+  jsonEquivalent: 'string'
+  minLength: 4
+  maxLength: 4
+  regexes:
+    pcre:
+      mic:
+        - pattern: '^[A-Z0-9]{4}$'
+          positive: True
+  targets:
+    bson:
+      nativeType: 'string'
+    cql:
+      nativeType: 'text'
+    elasticsearch:
+      nativeType: 'keyword'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'CHAR(4)'
+    mysql:
+      nativeType: 'CHAR(4)'
+    openldap:
+      # TODO: Make this NumericString or Integer
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
+      ldapMatchingRule: 'caseIgnoreMatch'
+      ldapOrderingRule: 'caseIgnoreOrderingMatch'
+      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
+    plsql:
+      nativeType: 'CHAR(4 CHAR)'
+    postgresql:
+      nativeType: 'char(4)'
+    sqlite:
+      nativeType: 'TEXT'
+    tsql:
+      nativeType: 'CHAR(4)'
+
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -4083,6 +4204,67 @@ spec:
       nativeType: 'INTEGER'
     tsql:
       nativeType: 'smallint'
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
+  name: nsin
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: 'National Securities Identifying Number'
+    preql.tech/fullPluralName: 'National Securities Identifying Numbers'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'Identifiers'
+    preql.tech/storageSizeInBytes: '9'
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'A unique identifier that identifies a securities trading exchange.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    # preql.tech/definingSpecification: ''
+    # preql.tech/definingSpecificationURI: ''
+    # preql.tech/exampleValue: ''
+spec:
+  jsonEquivalent: 'string'
+  minLength: 9
+  maxLength: 9
+  regexes:
+    pcre:
+      nsin:
+        - pattern: '^[A-Z0-9]{9}$'
+          positive: True
+  targets:
+    bson:
+      nativeType: 'string'
+    cql:
+      nativeType: 'text'
+    elasticsearch:
+      nativeType: 'keyword'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'CHAR(9)'
+    mysql:
+      nativeType: 'CHAR(9)'
+    openldap:
+      # TODO: Make this NumericString or Integer
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
+      ldapMatchingRule: 'caseIgnoreMatch'
+      ldapOrderingRule: 'caseIgnoreOrderingMatch'
+      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
+    plsql:
+      nativeType: 'CHAR(9 CHAR)'
+    postgresql:
+      nativeType: 'char(9)'
+    sqlite:
+      nativeType: 'TEXT'
+    tsql:
+      nativeType: 'CHAR(9)'
+
 ---
 apiVersion: preq/1.0.0
 kind: DataType
@@ -6233,7 +6415,7 @@ spec:
     pcre:
       label:
         - pattern: >
-            ^((\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?(?:\\.(\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?)*
+            ^(?:(\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?(?:\\.(\\p{L}|\\p{N})(?:(\\p{L}|\\p{N}|-){0,61}(\\p{L}|\\p{N}))?)*
   setters:
     - type: 'trim'
       side: 'both'
@@ -7574,6 +7756,67 @@ spec:
       nativeType: 'TEXT'
     tsql:
       nativeType: 'CHAR(2)'
+---
+apiVersion: preq/1.0.0
+kind: DataType
+metadata:
+  name: isli
+  namespace: default
+  labels:
+    preql.tech/fullSingularName: 'International Standard Link Identifier'
+    preql.tech/fullPluralName: 'International Standard Link Identifier'
+    preql.tech/standard: 'true'
+    preql.tech/category: 'Identifiers'
+    preql.tech/storageSizeInBytes: '9'
+    # preql.tech/bits: ''
+    # preql.tech/signed: ''
+    # preql.tech/country: ''
+    # preql.tech/objectIdentifier: ''
+    # preql.tech/uuid: ''
+  annotations:
+    preql.tech/description: 'An identifier of links between entities (or their names) in the field of information and documentation.'
+    preql.tech/author: 'Jonathan M. Wilbur'
+    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
+    preql.tech/definingSpecification: 'ISO 17316:2015'
+    preql.tech/definingSpecificationURI: 'https://www.iso.org/standard/59560.html'
+    preql.tech/exampleValue: 'ISLI 123456-12345-1'
+spec:
+  jsonEquivalent: 'string'
+  minLength: 19
+  maxLength: 19
+  regexes:
+    pcre:
+      nsin:
+        - pattern: '^ISLI \\d{6}-\\d{5}-\\d$'
+          positive: True
+  targets:
+    bson:
+      nativeType: 'string'
+    cql:
+      nativeType: 'text'
+    elasticsearch:
+      nativeType: 'keyword'
+    json:
+      nativeType: 'string'
+    mariadb:
+      nativeType: 'CHAR(19)'
+    mysql:
+      nativeType: 'CHAR(19)'
+    openldap:
+      # TODO: Make this NumericString or Integer
+      nativeType: '1.3.6.1.4.1.1466.115.121.1.15'
+      ldapMatchingRule: 'caseIgnoreMatch'
+      ldapOrderingRule: 'caseIgnoreOrderingMatch'
+      ldapSubstringMatchingRule: 'caseIgnoreSubstringsMatch'
+    plsql:
+      nativeType: 'CHAR(19 CHAR)'
+    postgresql:
+      nativeType: 'char(19)'
+    sqlite:
+      nativeType: 'TEXT'
+    tsql:
+      nativeType: 'CHAR(19)'
+
 ---
 apiVersion: preq/1.0.0
 kind: DataType
