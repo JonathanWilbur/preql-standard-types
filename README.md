@@ -171,7 +171,7 @@ This is currently in development.
     - [ ] `iban` (`CCKK-[0-9A-Z]{1,30}`)
     - [ ] `isil` (`[A-Z0-9/\-:]{1,16}`)
     - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
-    - [ ] `isni` (16 digits and a check character)
+    - [x] `isni` (16 digits and a check character)
     - [ ] `isci` (?)
     - [ ] Maybe add some sort of check-digit functionality?
   - [ ] `lccn` (Library of Congress Control Number?)
@@ -239,3 +239,4 @@ This is currently in development.
   - I omitted this originally because I have had problems with MariaDB matching
     strings when that is included.
 - [ ] Add multiple `exampleValue` fields.
+- [ ] Add `specificationPublisher` annotation
