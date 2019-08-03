@@ -173,6 +173,7 @@ This is currently in development.
     - [ ] `isli` (`ISLI XXXXXX-XXXXX-X`)
     - [x] `isni` (16 digits and a check character)
     - [ ] `isci` (?)
+    - [x] `mic`
     - [ ] Maybe add some sort of check-digit functionality?
   - [ ] `lccn` (Library of Congress Control Number?)
   - [ ] `oclc`
@@ -182,6 +183,7 @@ This is currently in development.
   - [ ] `coden`
   - [ ] `ettn`
   - [ ] `estc`
+  - [x] `nsin`
   - [x] `arn`
   - [ ] `iqn` (`iqn.YYYY-MM.wilbur.space(?:targetName)?`)
   - [ ] `ticker`
@@ -213,7 +215,11 @@ This is currently in development.
   - [x] ~~postalCode~~ (This should just be a VARCHAR(16))
   - [ ] `paymentCardNumber`
   - [ ] `imei`
+  - [ ] `iccid`
+  - [ ] `meid`
+  - [ ] `seid`
   - [ ] `grid` (https://en.wikipedia.org/wiki/Global_Release_Identifier)
+  - [ ] `duid`?
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
