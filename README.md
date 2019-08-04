@@ -221,6 +221,13 @@ This is currently in development.
   - [ ] `seid`
   - [ ] `grid` (https://en.wikipedia.org/wiki/Global_Release_Identifier)
   - [ ] `duid`?
+  - [ ] ISO script codes?
+  - [ ] `cage` (https://en.wikipedia.org/wiki/Commercial_and_Government_Entity_code)
+  - [ ] `tpin` (https://en.wikipedia.org/wiki/Trading_Partner_Identification_Number)
+  - [ ] `abn` (https://en.wikipedia.org/wiki/Australian_Business_Number)
+  - [ ] ISO currency codes?
+  - [ ] `iocc` Olympic Country Codes
+  - [x] `fipsCountryCode`
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?
