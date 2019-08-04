@@ -18,7 +18,7 @@
 # value := token / quoted-string
 # token := 1*<any (US-ASCII) CHAR except SPACE, CTLs, or tspecials>
 # attribute := token ; ALWAYS case-insensitive.
-apiVersion: preq/1.0.0
+apiVersion: preql/1.0.0
 kind: DataType
 metadata:
   name: mimeType

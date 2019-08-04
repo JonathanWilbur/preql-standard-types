@@ -1,5 +1,5 @@
 ---
-apiVersion: preq/1.0.0
+apiVersion: preql/1.0.0
 kind: DataType
 metadata:
   name: pixelColor

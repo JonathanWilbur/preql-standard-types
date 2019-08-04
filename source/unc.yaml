@@ -11,7 +11,7 @@
 # stream-name        = *schar
 # schar              = %x01-2E / %x30-39 / %x3B-5B /%x5D-FF
 # stream-type        = 1*schar
-apiVersion: preq/1.0.0
+apiVersion: preql/1.0.0
 kind: DataType
 metadata:
   name: unc

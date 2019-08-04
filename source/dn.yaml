@@ -3,7 +3,7 @@
 # circumstances in which Active Directory would not accept a
 # distinguished name greater than 255 characters.
 # See: https://stackoverflow.com/questions/20360360/how-long-maximum-characters-is-an-ldap-distinguished-name
-apiVersion: preq/1.0.0
+apiVersion: preql/1.0.0
 kind: DataType
 metadata:
   name: dn
