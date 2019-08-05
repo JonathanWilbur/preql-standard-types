@@ -28,7 +28,9 @@ spec:
   maxLength: 8
   regexes:
     pcre:
-      ean: '^[A-Z]{2}-[A-Z0-9]+'
+      iso:
+        - pattern: '^[A-Z]{2}-[A-Z0-9]+'
+          positive: True
   setters:
     - type: 'trim'
       side: 'both'

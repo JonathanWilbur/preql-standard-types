@@ -271,7 +271,9 @@ spec:
   maxLength: 2
   regexes:
     pcre:
-      ean: '^[A-Z]{2}'
+      iso:
+        - pattern: '^[A-Z]{2}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
@@ -4554,7 +4556,9 @@ spec:
   maxLength: 3
   regexes:
     pcre:
-      ean: '^[A-Z]{3}'
+      iso:
+        - pattern: '^[A-Z]{3}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
@@ -5798,7 +5802,9 @@ spec:
   maxLength: 3
   regexes:
     pcre:
-      ean: '^[A-Z]{3}'
+      iso:
+        - pattern: '^[A-Z]{3}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
@@ -6439,7 +6445,9 @@ spec:
   maxLength: 3
   regexes:
     pcre:
-      ean: '^[A-Z]{3}'
+      iso:
+        - pattern: '^[A-Z]{3}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
@@ -6492,7 +6500,9 @@ spec:
   maxLength: 8
   regexes:
     pcre:
-      ean: '^[A-Z]{2}-[A-Z0-9]+'
+      iso:
+        - pattern: '^[A-Z]{2}-[A-Z0-9]+'
+          positive: True
   setters:
     - type: 'trim'
       side: 'both'
@@ -6650,7 +6660,9 @@ spec:
   maxLength: 2
   regexes:
     pcre:
-      ean: '^[A-Z]{2}'
+      iso:
+        - pattern: '^[A-Z]{2}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
@@ -7194,7 +7206,9 @@ spec:
   maxLength: 3
   regexes:
     pcre:
-      ean: '^[A-Z]{3}'
+      iso:
+        - pattern: '^[A-Z]{3}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
