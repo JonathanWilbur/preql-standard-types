@@ -7319,25 +7319,6 @@ spec:
 apiVersion: preql/1.0.0
 kind: DataType
 metadata:
-  name: id
-  namespace: default
-  labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
-    preql.tech/standard: 'true'
-    preql.tech/category: ''
-  annotations:
-    preql.tech/description: ''
-    preql.tech/author: 'Jonathan M. Wilbur'
-    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    preql.tech/exampleValue: ''
-spec:
-  jsonEquivalent: 'string'
-  targets: {}
----
-apiVersion: preql/1.0.0
-kind: DataType
-metadata:
   name: personName
   namespace: default
   labels:
