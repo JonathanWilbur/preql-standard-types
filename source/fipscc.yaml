@@ -28,7 +28,9 @@ spec:
   maxLength: 2
   regexes:
     pcre:
-      ean: '^[A-Z]{2}'
+      fips:
+        - pattern: '^[A-Z]{2}'
+          positive: True
   setters:
     - type: 'case'
       casing: 'upper'
