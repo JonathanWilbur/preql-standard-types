@@ -941,7 +941,9 @@ spec:
   maxLength: 14
   regexes:
     pcre:
-      ean: '^\\d{14}'
+      gtin:
+        - pattern: '^\\d{14}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -2149,7 +2151,9 @@ spec:
   maxLength: 8
   regexes:
     pcre:
-      ean: '^\\d{8}'
+      gtin:
+        - pattern: '^\\d{8}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -2252,7 +2256,9 @@ spec:
   maxLength: 13
   regexes:
     pcre:
-      ean: '^\\d{13}'
+      gtin:
+        - pattern: '^\\d{13}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -2960,7 +2966,9 @@ spec:
   maxLength: 12
   regexes:
     pcre:
-      ean: '^\\d{12}'
+      gtin:
+        - pattern: '^\\d{12}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -4983,25 +4991,6 @@ spec:
       nativeType: 'TEXT'
     tsql:
       nativeType: 'VARCHAR(12)'
----
-apiVersion: preql/1.0.0
-kind: DataType
-metadata:
-  name: gtin
-  namespace: default
-  labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
-    preql.tech/standard: 'true'
-    preql.tech/category: ''
-  annotations:
-    preql.tech/description: ''
-    preql.tech/author: 'Jonathan M. Wilbur'
-    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    preql.tech/exampleValue: ''
-spec:
-  jsonEquivalent: 'string'
-  targets: {}
 ---
 apiVersion: preql/1.0.0
 kind: DataType

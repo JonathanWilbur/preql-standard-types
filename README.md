@@ -226,8 +226,9 @@ This is currently in development.
   - [ ] `tpin` (https://en.wikipedia.org/wiki/Trading_Partner_Identification_Number)
   - [ ] `abn` (https://en.wikipedia.org/wiki/Australian_Business_Number)
   - [ ] ISO currency codes?
-  - [ ] `iocc` Olympic Country Codes
+  - [x] `iocc` Olympic Country Codes
   - [x] `fipsCountryCode`
+- [ ] Check `regexes` group names
 - [ ] Add LDAP matching rules
 - [ ] Add `minimum` and `maximum` to floating point types.
   - [ ] How will the targe libraries ignore storage extrema?

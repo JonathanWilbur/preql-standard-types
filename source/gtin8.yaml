@@ -28,7 +28,9 @@ spec:
   maxLength: 8
   regexes:
     pcre:
-      ean: '^\\d{8}'
+      gtin:
+        - pattern: '^\\d{8}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
