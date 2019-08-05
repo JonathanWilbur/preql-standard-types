@@ -2,7 +2,7 @@
 apiVersion: preql/1.0.0
 kind: DataType
 metadata:
-  name: uri
+  name: url
   namespace: default
   labels:
     preql.tech/fullSingularName: 'Uniform Resource Locator'
