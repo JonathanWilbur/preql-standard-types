@@ -28,7 +28,9 @@ spec:
   maxLength: 5
   regexes:
     pcre:
-      ean: '^\\d{5}'
+      ean:
+        - pattern: '^\\d{5}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'

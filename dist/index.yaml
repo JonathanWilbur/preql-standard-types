@@ -126,7 +126,9 @@ spec:
   maxLength: 8
   regexes:
     pcre:
-      ean: '^\\d{8}'
+      ean:
+        - pattern: '^\\d{8}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -1303,7 +1305,9 @@ spec:
   maxLength: 5
   regexes:
     pcre:
-      ean: '^\\d{5}'
+      ean:
+        - pattern: '^\\d{5}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -1997,7 +2001,9 @@ spec:
   maxLength: 2
   regexes:
     pcre:
-      ean: '^\\d{2}'
+      ean:
+        - pattern: '^\\d{2}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -2092,7 +2098,9 @@ spec:
   maxLength: 13
   regexes:
     pcre:
-      ean: '^\\d{13}'
+      ean:
+        - pattern: '^\\d{13}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
