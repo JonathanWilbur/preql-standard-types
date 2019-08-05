@@ -28,7 +28,9 @@ spec:
   maxLength: 6
   regexes:
     pcre:
-      ean: '^\\d{6}'
+      upc:
+        - pattern: '^\\d{6}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'

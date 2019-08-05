@@ -2289,25 +2289,6 @@ spec:
 apiVersion: preql/1.0.0
 kind: DataType
 metadata:
-  name: upc
-  namespace: default
-  labels:
-    preql.tech/fullSingularName: ''
-    preql.tech/fullPluralName: ''
-    preql.tech/standard: 'true'
-    preql.tech/category: ''
-  annotations:
-    preql.tech/description: ''
-    preql.tech/author: 'Jonathan M. Wilbur'
-    preql.tech/authorEmailAddress: 'jonathan@wilbur.space'
-    preql.tech/exampleValue: ''
-spec:
-  jsonEquivalent: 'string'
-  targets: {}
----
-apiVersion: preql/1.0.0
-kind: DataType
-metadata:
   name: toml
   namespace: default
   labels:
@@ -2616,7 +2597,9 @@ spec:
   maxLength: 12
   regexes:
     pcre:
-      ean: '^\\d{12}'
+      upc:
+        - pattern: '^\\d{12}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -3768,7 +3751,9 @@ spec:
   maxLength: 5
   regexes:
     pcre:
-      ean: '^\\d{5}'
+      upc:
+        - pattern: '^\\d{5}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -4317,7 +4302,9 @@ spec:
   maxLength: 12
   regexes:
     pcre:
-      ean: '^\\d{12}'
+      upc:
+        - pattern: '^\\d{12}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -4964,7 +4951,9 @@ spec:
   maxLength: 12
   regexes:
     pcre:
-      ean: '^\\d{12}'
+      upc:
+        - pattern: '^\\d{12}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -5420,7 +5409,9 @@ spec:
   minLength: 12
   regexes:
     pcre:
-      ean: '^\\d{12,}'
+      upc:
+        - pattern: '^\\d{12,}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -7023,7 +7014,9 @@ spec:
   maxLength: 2
   regexes:
     pcre:
-      ean: '^\\d{2}'
+      upc:
+        - pattern: '^\\d{2}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
@@ -7420,7 +7413,9 @@ spec:
   maxLength: 6
   regexes:
     pcre:
-      ean: '^\\d{6}'
+      upc:
+        - pattern: '^\\d{6}'
+          positive: True
   targets:
     bson:
       nativeType: 'string'
